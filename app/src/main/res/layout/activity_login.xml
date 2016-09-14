@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/per_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/ll_layout_1"
+        android:orientation="vertical"
+        android:gravity="center_horizontal|bottom"
+        app:layout_heightPercent="33%">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_image_view"
+            android:src="@android:drawable/sym_def_app_icon"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="FORGOT PASSWORD"
+            android:textSize="24sp"
+            android:textColor="#212121"
+            android:id="@+id/tv_text_view"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/ll_layout_1"
+        android:gravity="center"
+        android:id="@+id/ll_layout_2"
+        app:layout_heightPercent="35%">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/login"
+            android:hint="USERNAME"
+            android:maxLines="1"
+            android:textSize="20sp"
+            android:id="@+id/et_user_label"
+            android:padding="5dp"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@android:drawable/ic_menu_send"
+            android:drawableStart="@android:drawable/ic_menu_send"
+            android:ems="10"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:maxLines="1"
+            android:background="@drawable/login"
+            android:inputType="textPassword"
+            android:hint="PASSWORD"
+            android:textSize="20sp"
+            android:id="@+id/et_pass_label"
+            android:padding="5dp"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@android:drawable/sym_action_email"
+            android:drawableStart="@android:drawable/sym_action_email"
+            android:ems="10"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/ll_layout_2"
+        android:id="@+id/ll_layout_3"
+        android:orientation="vertical"
+        android:gravity="center_horizontal|top"
+        app:layout_heightPercent="33%">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="SEND"
+            android:textSize="20sp"
+            android:id="@+id/bt_button"
+            android:background="@android:color/holo_blue_dark"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="FORGOT PASSWORD ?"
+            android:id="@+id/tv_forgot_label"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="20sp"/>
+</LinearLayout>
+
+</android.support.percent.PercentRelativeLayout>
